@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
-import MovieDetails from './components/MovieDetails'; // Import MovieDetails
+import MovieDetails from './components/MovieDetails'; // Import MovieDetailsss
 
 const App = () => {
   const [movies, setMovies] = useState({});
