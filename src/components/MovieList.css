@@ -1,0 +1,61 @@
+/* Container for the movie list */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: center;
+    padding: 20px;
+    background-color: #292828; /* Optional: Light background */
+    border-radius: 15px;
+}
+
+/* Styling for individual movie items */
+.movie-item {
+    width: 180px; /* Fixed width for all items */
+    aspect-ratio: 2/3; /* Ensures a consistent aspect ratio (2:3) */
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Rounds the corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Hover effect for the movie items */
+.movie-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Movie poster container */
+.movie-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the poster fills the available space proportionally */
+    border-radius: 15px; /* Matches the card's rounded corners */
+    transition: opacity 0.3s ease;
+}
+
+/* Dim the poster on hover */
+.movie-item:hover img {
+    opacity: 0.9;
+}
+
+/* Movie title styling */
+.movie-item p {
+    margin: 10px 0;
+    padding: 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 10px; /* Adds a slight rounding to the title container */
+}

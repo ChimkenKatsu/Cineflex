@@ -1,11 +1,11 @@
 import React from 'react';
 
-const MovieListHeading = (props) => {
-	return (
-		<div className='col'>
-			<h1>{props.heading}</h1>
-		</div>
-	);
+const MovieListHeading = ({ heading }) => {
+    return (
+        <h2 className="movie-list-heading">
+            {heading}
+        </h2>
+    );
 };
 
 export default MovieListHeading;
