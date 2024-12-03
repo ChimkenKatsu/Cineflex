@@ -1,6 +1,6 @@
 import React from 'react';
 import './MovieList.css';
-
+//s
 const MovieList = ({ movies }) => {
     return (
         <div className="movie-list">

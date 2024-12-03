@@ -1,5 +1,5 @@
 import React from 'react';
-
+//s
 const MovieListHeading = ({ heading }) => {
     return (
         <h2 className="movie-list-heading">

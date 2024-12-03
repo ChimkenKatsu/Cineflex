@@ -213,7 +213,7 @@ body {
 	background-color: #e50914;
 }
 
-/* Movie Row Adjustments */
+/* Movie Row Adjustmentsss */
 .movie-row::-webkit-scrollbar {
 	display: none;
 }
@@ -240,6 +240,7 @@ body {
 	}
 
 	.movie-row {
-		gap: 10px;
+		gap: 10px; 
+		
 	}
 }
