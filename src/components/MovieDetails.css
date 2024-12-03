@@ -1,0 +1,68 @@
+/* Overlay for the movie details modal */
+.details-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Black transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+}
+
+/* Content box for the details */
+.details-content {
+    background: #000; /* Solid black background */
+    color: #fff; /* White text for contrast */
+    padding: 25px;
+    border-radius: 15px; /* Rounded corners */
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+    position: relative; /* For close button positioning */
+    border: 1px solid #444; /* Light border for definition */
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff; /* Matches the black theme */
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #ff6b6b; /* Highlighted red on hover */
+}
+
+/* Title styling */
+.details-content h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffd700; /* Golden title for elegance */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3); /* Soft glow effect */
+}
+
+/* Paragraph styling for details */
+.details-content p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #ddd; /* Light gray for better readability */
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+/* Strong tags for field labels */
+.details-content p strong {
+    color: #ffd700; /* Golden labels for fields */
+}
